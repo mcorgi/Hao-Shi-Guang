@@ -456,6 +456,8 @@ a.kf-btn-link:hover span:before,
 /* Style the fake upload button */
 .kf-btn.upload-btn {
   display: inline-block;
+  text-align: center;
+  gap:8px;
   background-color: #758d52; /* match your buttons */
   color: #fff;
   padding: 12px 20px;

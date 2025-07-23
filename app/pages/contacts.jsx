@@ -108,75 +108,7 @@ const Contacts = () => {
         </div>
       </section>
       
-      {/* Section Brands */}
-      {/*
-      <div className="section kf-brands">
-        <div className="container">
-          <div className="kf-brands-items row">
-            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
-              <div
-                className="kf-brands-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  <img src="images/brand1.png" alt="image" />
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
-              <div
-                className="kf-brands-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  <img src="images/brand2.png" alt="image" />
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
-              <div
-                className="kf-brands-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  <img src="images/brand3.png" alt="image" />
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
-              <div
-                className="kf-brands-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  <img src="images/brand4.png" alt="image" />
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
-              <div
-                className="kf-brands-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  <img src="images/brand5.png" alt="image" />
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-2">
-              <div
-                className="kf-brands-item element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <div className="image">
-                  <img src="images/brand6.png" alt="image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      */}
+      
     </Layouts>
   );
 };

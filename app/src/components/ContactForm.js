@@ -1,171 +1,60 @@
-import { Formik } from 'formik';
+import { useState } from "react";
 
 const ContactForm = () => {
-  
-  const formData = {
-    "formspreeURL": "https://formspree.io/f/YOUR_API_KEY"
-  }
-  
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("/api/send-contact", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        e.target.reset();
+      } else {
+        setStatus("Failed to send message.");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("Error sending message.");
+    }
+  };
+
   return (
-    <>
-      <Formik
-        initialValues = {{ email: '', name: '', tel: '', subject: '', message: '' }}
-        validate = { values => {
-            const errors = {};
-            if (!values.email) {
-                errors.email = 'Required';
-            } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-            ) {
-                errors.email = 'Invalid email address';
-            }
-            return errors;
-        }}
-        onSubmit = {( values, { setSubmitting, resetForm } ) => {
-            const form = document.getElementById("contactForm");
-            const status = document.getElementById("contactFormStatus");
-            const data = new FormData();
-
-            data.append('name', values.name);
-            data.append('email', values.email);
-            data.append('tel', values.tel);
-            data.append('subject', values.subject);
-            data.append('message', values.message);
-
-            fetch(form.action, {
-                method: 'POST',
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                console.log(response);
-                if (response.ok) {
-                    resetForm();
-                    status.innerHTML = "Thanks for your submission!";
-                    status.style.display = 'block';
-                    form.style.display = 'none';
-
-                    setTimeout(function(){
-                      status.style.display = 'none';
-                      form.style.display = 'block';
-                    }, 4000);
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            status.innerHTML = "Oops! There was a problem submitting your form"
-                        }
-                    })
-                }
-            }).catch(error => {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-            });
-
-            setSubmitting(false);
-        }}
-        >
-        {({
-            values,
-            errors,
-            touched,
-            handleChange,
-            handleBlur,
-            handleSubmit,
-            isSubmitting,
-            /* and other goodies */
-        }) => (
-        <form onSubmit={handleSubmit} id="contactForm" action={formData.formspreeURL}>
-          <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div className="kf-field">
-                  <input 
-                    type="text" 
-                    name="name" 
-                    placeholder="Full Name" 
-                    required="required" 
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.name}
-                  />
-                  <i className="far fa-user" />
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div className="kf-field">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    required="required" 
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.email}
-                  />
-                  <i className="fas fa-at" />
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div className="kf-field">
-                  <input 
-                    type="tel" 
-                    name="tel" 
-                    placeholder="Phone Number" 
-                    required="required" 
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.tel}
-                  />
-                  <i className="fas fa-mobile-alt" />
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="kf-field">
-                  <input 
-                    type="text" 
-                    name="subject" 
-                    placeholder="Subject" 
-                    required="required" 
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.subject}
-                  />
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="kf-field">
-                  <textarea
-                    name="message"
-                    placeholder="Message"
-                    defaultValue={""}
-                    required="required" 
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.message}
-                  />
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="kf-bts">
-                  <button
-                    type="submit"
-                    className="kf-btn"
-                  >
-                    <span>Send us message</span>
-                    <i className="fas fa-chevron-right" />
-                  </button>
-                </div>
-              </div>
-            </div>
-
-        </form>
-        )}
-      </Formik>
-      <div className="alert-success" style={{ display: "none" }} id="contactFormStatus">
-        <p>Thanks, your message is sent successfully.</p>
+    <form className="kf-contact-form" method="POST" onSubmit={handleSubmit}>
+      <div className="row">
+        <div className="col-xs-12 col-sm-4">
+          <input type="text" name="name" placeholder="Full Name" required />
+        </div>
+        <div className="col-xs-12 col-sm-4">
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div className="col-xs-12 col-sm-4">
+          <input type="tel" name="phone" placeholder="Phone Number" />
+        </div>
+        <div className="col-xs-12">
+          <textarea
+            name="message"
+            placeholder="Your message here"
+            rows="6"
+          ></textarea>
+        </div>
+        <div className="col-xs-12 align-center">
+          <button type="submit" className="kf-btn">
+            <span>Send Message</span>
+          </button>
+          {status && <p style={{ marginTop: "10px" }}>{status}</p>}
+        </div>
       </div>
-    </>
+    </form>
   );
 };
+
 export default ContactForm;
