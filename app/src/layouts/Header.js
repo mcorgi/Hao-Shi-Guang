@@ -94,9 +94,11 @@ const Header = () => {
                     <li>
                       <Link href="team">Our Chefs</Link>
                     </li>
+                    {/*
                     <li>
                       <Link href="gallery">Gallery</Link>
                     </li>
+                    */}
                   </ul>
                 </li>
                 <li>
