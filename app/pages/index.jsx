@@ -51,6 +51,68 @@ const Index = () => {
       {/* Section Started Slider */}
       <MainSlider />
 
+      {/* Section About */}
+      <section className="section kf-about section-bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+              <div className="kf-titles">
+                <div
+                  className="kf-subtitle element-anim-1 scroll-animate"
+                  data-animate="active"
+                >
+                  About Us
+                </div>
+                <h3
+                  className="kf-title element-anim-1 scroll-animate"
+                  data-animate="active"
+                >
+                 Our Culinary Journey 
+                </h3>
+              </div>
+              <div
+                className="kf-text element-anim-1 scroll-animate" style={{ fontSize: "1.15rem", lineHeight: "1.7rem" }}
+                data-animate="active"
+              >
+                <p>
+                  Hao Shi Guang is a one-of-a-kind culinary establishment with a menu inspired by the idea of simple and honest cooking. Starting in 2022, we developed a unique dining experience for all of our guests using fresh and sustainable ingredients—taking you on a culinary journey like no other.
+                </p>
+                <br></br>
+                <p>From classic recipes to new-age kitchen adventures, each dish reflects our passion for high-quality food presented in a simple yet pleasing manner. <strong>Dive right in, and take a bite; join us today.</strong></p>
+                <br></br>
+              </div>
+              <Link href="about" className="kf-btn dark-btn">
+                    <span>read more</span>
+                    <i className="fas fa-chevron-right" />
+                  </Link>
+              <div
+                className="kf-about-quote element-anim-1 scroll-animate"
+                data-animate="active"
+              >
+                
+                <img src="images/mainchef.jpg" alt="image" />
+                <div>
+                  "Every day, I must bring my best to the stove to ensure that customers leave the restaurant satisfied with their meal.
+"
+                </div>
+
+              </div>
+              <br></br>
+              
+            </div>
+            
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+              <div
+                className="kf-about-image element-anim-1 scroll-animate"
+                data-animate="active"
+              >
+                <img src="images/mainchef.jpg" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section about Seasonal Dishes Here */}
         <div className="container2" style={{ paddingLeft: "40px", paddingRight: "40px" }}>
       
@@ -187,67 +249,7 @@ const Index = () => {
         
 
       </section>
-      {/* Section About */}
-      <section className="section kf-about section-bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-              <div className="kf-titles">
-                <div
-                  className="kf-subtitle element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  About Us
-                </div>
-                <h3
-                  className="kf-title element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                 Our Culinary Journey 
-                </h3>
-              </div>
-              <div
-                className="kf-text element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <p>
-                  Hao Shi Guang is a one-of-a-kind culinary establishment with a menu inspired by the idea of simple and honest cooking. Starting in 2022, we developed a unique dining experience for all of our guests using fresh and sustainable ingredients—taking you on a culinary journey like no other.
-                </p>
-                <br></br>
-                <p>From classic recipes to new-age kitchen adventures, each dish reflects our passion for high-quality food presented in a simple yet pleasing manner. Dive right in, and take a bite; join us today.</p>
-                <br></br>
-              </div>
-              <Link href="about" className="kf-btn dark-btn">
-                    <span>read more</span>
-                    <i className="fas fa-chevron-right" />
-                  </Link>
-              <div
-                className="kf-about-quote element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                
-                <img src="images/mainchef.jpg" alt="image" />
-                <div>
-                  "Every day, I must bring my best to the stove to ensure that customers leave the restaurant satisfied with their meal.
-"
-                </div>
-
-              </div>
-              <br></br>
-              
-            </div>
-            
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-              <div
-                className="kf-about-image element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <img src="images/mainchef.jpg" alt="image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <br></br>
 
       {/* 3 Pictures Slider*/}
