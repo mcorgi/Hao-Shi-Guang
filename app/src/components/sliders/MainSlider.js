@@ -46,7 +46,7 @@ const MainSlider = () => {
                   Tastes like home.
                 </h2>
                 <div className="kf-bts">
-                  <Link href="reservation" className="kf-btn h-btn">
+                  <Link href="https://tables.toasttab.com/restaurants/93a7c5b8-22cf-45d6-8742-259e7bc967d8/findTime" className="kf-btn h-btn">
                     <span>book a table</span>
                     <i className="fas fa-chevron-right" />
                   </Link>
