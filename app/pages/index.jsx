@@ -624,7 +624,7 @@ const Index = () => {
             </div>
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
               <Link
-                href="reservation"
+                href="jointeam"
                 className="kf-btn element-anim-1 scroll-animate"
                 data-animate="active"
               >
