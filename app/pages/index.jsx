@@ -9,31 +9,31 @@ import MenuItem from "@/src/components/MenuItem";
 const featuredDishes = [
   {
     id: 1,
-    name: "Sizzling Tofu and Sea Urchin",
-    price: "$18.50",
-    image: "/images/braisedporkwithtofu.jpg", 
-    link:"https://order.toasttab.com/online/haoshiguang/item-h08-sizzling-tofu-and-sea-urchin-in-stone-pot_1c0b5485-e9d5-40e4-839c-5fa6bc251da8",
+    name: "Eggplant Salad with Peanuts and Egg Crumble",
+    price: "$10.50",
+    image: "/images/eggplantsalad.jpg", 
+    link:"https://order.toasttab.com/online/haoshiguang/item-h10eggplant-salad-with-peanuts-and-egg-crumble_cc017f14-a12d-4430-aeee-0f24354ebe05",
   },
   {
     id: 2,
-    name: "Lamb Skewers (2pcs)",
-    price: "$8.00",
-    image: "/images/lambskewers.jpg",
-    link:"https://order.toasttab.com/online/haoshiguang/item-b01lamb-skewers_09aeec61-204d-4ef4-ac5d-44f167106231",
+    name: "Fried Chicken with Bay Leaves",
+    price: "$19.50",
+    image: "/images/friedchicken.png",
+    link:"https://order.toasttab.com/online/haoshiguang/item-h03-fried-chicken-wings-with-bay-leaves_a231083c-3dc0-4087-9ec7-3f9958057a71",
   },
   {
     id: 3,
-    name: "Kung Pao Chicken",
-    price: "$16.50",
-    image: "/images/kungpaochicken.jpg",
-    link:"https://order.toasttab.com/online/haoshiguang/item-h32-kung-pao-chickencan-not-make-it-nonspicy_78c86502-4994-4a18-a19d-4374093457a2",
+    name: "Stir Fried Green Beans",
+    price: "$21.50",
+    image: "/images/greenbeans.jpeg",
+    link:"https://order.toasttab.com/online/haoshiguang/item-h02-stir-fried-green-bean-with-pork-and-dried-shrimp_04d2f85b-59de-43f3-8238-2c3e67c6410f",
   },
   {
     id: 4,
-    name: "Fried Noodles With Beef",
-    price: "$17.50",
-    image: "/images/friednoodleswbeef.jpg",
-    link:"https://order.toasttab.com/online/haoshiguang",
+    name: "Clay Pot Sauteed Beef",
+    price: "$22.50",
+    image: "/images/claypotbeef.png",
+    link:"https://order.toasttab.com/online/haoshiguang/item-h07-clay-pot-sauteed-beef_ab0bf2e0-4e91-4896-b11a-d840b6bf0209",
   },
   {
     id: 5,
@@ -637,5 +637,5 @@ const Index = () => {
       </section>
     </Layouts>
   );
-};
+}; 
 export default Index;
