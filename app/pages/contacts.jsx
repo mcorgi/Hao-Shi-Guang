@@ -10,7 +10,7 @@ const Contacts = () => {
         <div
           className="kf-parallax-bg js-parallax"
           style={{
-            backgroundImage: "url(images/menu_reservation_inner_bg.jpg)",
+            backgroundImage: "url(images/haoshiguangcontact.jpg)",
           }}
         />
         <div className="container">

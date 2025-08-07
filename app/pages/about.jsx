@@ -9,7 +9,7 @@ const About = () => {
       <section className="section kf-started-inner">
         <div
           className="kf-parallax-bg js-parallax"
-          style={{ backgroundImage: "url(images/history_inner_bg.jpg)" }}
+          style={{ backgroundImage: "url(images/haoshiguangballoons.jpg)" }}
         />
         <div className="container">
           <h1
@@ -77,7 +77,7 @@ const About = () => {
           className="kf-choose-image element-anim-1 scroll-animate"
           data-animate="active"
         >
-          <img src="images/about_img2.jpg" alt="image" />
+          <img src="images/haoshiguangballoons.jpg" alt="image" />
         </div>
       </div>
     </div>
@@ -89,6 +89,7 @@ const About = () => {
 <section
   className="section interview-section"
   style={{ color: "#404a32", backgroundColor: "#eaf0e0", padding: "60px 0" }}
+
 >
   <div className="container">
     {/* Business Description */}
@@ -105,10 +106,37 @@ const About = () => {
       >
         Intro
       </h3>
+
+
     </div>
+    <div
+  style={{
+    display: "flex",
+    alignItems: "flex-start",
+    gap: "20px",
+    marginTop: "20px",
+    flexWrap: "wrap"
+  }}
+>
+  <div style={{ flex: "1 1 300px", minWidth: "250px" }}>
+    <div className="kf-text" data-animate="active" style={{ fontSize: "1.15rem", lineHeight: "1.7rem" }}>
     <p>
       At HaoShiGuang, we specialize in <strong>authentic Northeastern Chinese cuisine</strong>. Located at <strong>48 Harvard Avenue in Allston</strong>, we operate an intimate space with <strong>14 tables</strong>. While many Chinese restaurants in America are predominantly Cantonese, we offer a glimpse into <strong>Dongbei (Northeast) cuisine</strong>, focusing on <strong>braising, wok cookery, and simmering</strong>, highlighting hearty flavors perfect for the region's harsh winters. All of our chefs come from <strong>Northern China</strong>, with our Head Chef <strong>Hou Liang</strong> hailing from <strong>Shenyang</strong>. His experience in the mainland of China brings <strong>complex flavors</strong> that stand out in Boston's dining scene.
     </p>
+    </div>
+  </div>
+
+  <img
+    src="images/haoshiguanginterior2.jpg"
+    alt="Intro visual"
+    style={{
+      width: "550px",
+      height: "auto",
+      borderRadius: "10px",
+      flexShrink: 0
+    }}
+  />
+</div>
 
     {/* General Manager */}
     <div className="kf-titles" style={{ marginTop: "40px" }}>
@@ -119,12 +147,16 @@ const About = () => {
         Meet Theodore Lai – General Manager
       </h3>
     </div>
+    <div className="kf-text" data-animate="active" style={{ fontSize: "1.15rem", lineHeight: "1.7rem" }}>
     <p>
       Hello, I am <strong>Theodore Lai</strong>, and I am the General Manager for Z&N LLC’s HaoShiGuang. We are a multicultural establishment bringing together <strong>Chinese chefs and a diverse staff</strong>. Being Chinese-American, I act as a <strong>bridge between cultures</strong> and languages. I first began my journey in restaurants after leaving my path in the <strong>Naval ROTC program</strong> due to personal loss. Restaurants gave me a new purpose. I started as a <strong>Sushi cook</strong> and worked under <strong>James Beard-nominated Chef Theo Adley</strong> at Marigold, before contributing at Michelin-starred Beckon, Corrida, and Champagne Tiger, eventually becoming the GM at HaoShiGuang.
     </p>
+    
     <p>
       The most important advice I’ve received is: <strong>“Aim for a 1% improvement every day.”</strong>
     </p>
+    </div>
+    
 
     {/* Executive Chef */}
     <div className="kf-titles" style={{ marginTop: "40px" }}>
@@ -135,14 +167,17 @@ const About = () => {
         Meet Hou Liang – Executive Chef
       </h3>
     </div>
+    <div className="kf-text" data-animate="active" style={{ fontSize: "1.15rem", lineHeight: "1.7rem" }}>
     <p>
       Hello, I am <strong>Hou Liang</strong>, the Executive Chef for HaoShiGuang. My journey began in <strong>Shandong Province</strong>, near my hometown of Liaoning. I trained under the renowned Chef <strong>Shushan Dong</strong>, specializing in <strong>traditional Shandong cuisine</strong>. My philosophy is: <strong>“If you do not continuously make small steps forward in a flowing stream, you will eventually be left behind.”</strong> I lead my team with this mindset — ensuring our flavors and techniques are always evolving.
     </p>
+    </div>
   </div>
 </section>
 
 
       {/* Meet Our Chefs */}
+      {/*
       <section className="section kf-team section-bg">
         <div className="container">
           <div className="kf-titles align-center">
@@ -241,6 +276,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Testimonials Carousel */}
       <TestimonialsCarousel />

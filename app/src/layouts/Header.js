@@ -80,20 +80,16 @@ const Header = () => {
                 <li>
                   <Link href="about">
                     About
-                    <i className="las la-angle-down" />
+                    
                   </Link>
                   <ul>
-                    <li>
-                      <Link href="about">About Us</Link>
-                    </li>
+                    
                     {/*
                     <li>
                       <Link href="history">History</Link>
                     </li>
                     */}
-                    <li>
-                      <Link href="team">Our Chefs</Link>
-                    </li>
+                    
                     {/*
                     <li>
                       <Link href="gallery">Gallery</Link>

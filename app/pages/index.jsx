@@ -30,10 +30,10 @@ const featuredDishes = [
   },
   {
     id: 4,
-    name: "Clay Pot Sauteed Beef",
-    price: "$22.50",
-    image: "/images/claypotbeef.png",
-    link:"https://order.toasttab.com/online/haoshiguang/item-h07-clay-pot-sauteed-beef_ab0bf2e0-4e91-4896-b11a-d840b6bf0209",
+    name: "Fried Pork in Scoop",
+    price: "$24.00",
+    image: "/images/potpork.jpg",
+    link:"https://order.toasttab.com/online/haoshiguang/item-h09-30-30min-required-fried-pork-in-scoop-guo-bao-rou_255ce1e6-01f5-4f81-b044-4a965f73ede6",
   },
   {
     id: 5,
