@@ -599,6 +599,7 @@ const Index = () => {
       {/* Section CTA */}
       <section
         className="section kf-cta kf-parallax"
+        style={{ backgroundImage: "url(images/haoshiguanginterior1.jpg)" }}
        
       >
         <div className="container">

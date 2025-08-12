@@ -284,14 +284,14 @@ const About = () => {
       {/* Section CTA */}
       <section
         className="section kf-cta kf-parallax"
-        style={{ backgroundImage: "url(images/cta_bg.jpg)" }}
+        style={{ backgroundImage: "url(images/haoshiguanginterior1.jpg)" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
               <div className="kf-titles">
                 <div className="kf-subtitle element-anim-1 scroll-animate" data-animate="active">
-                  Need a Table On Coffee House
+                  Need a Table?
                 </div>
                 <h3 className="kf-title element-anim-1 scroll-animate" data-animate="active">
                   Booking Table For Your &amp; Family Members
@@ -299,7 +299,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
-              <Link href="reservation" className="kf-btn element-anim-1 scroll-animate" data-animate="active">
+              <Link href="https://tables.toasttab.com/restaurants/93a7c5b8-22cf-45d6-8742-259e7bc967d8/findTime" className="kf-btn element-anim-1 scroll-animate" data-animate="active">
                 <span>booking table</span>
                 <i className="fas fa-chevron-right" />
               </Link>
