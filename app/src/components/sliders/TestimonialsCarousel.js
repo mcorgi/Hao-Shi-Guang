@@ -119,60 +119,7 @@ const TestimonialsCarousel = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div
-                  className="slide-item element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  <div className="image">
-                    <img src="images/rev2.jpg" alt="image" />
-                  </div>
-                  <div className="desc">
-                    <div className="stars">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                    </div>
-                    <div className="kf-text">
-                      Sed ut perspiciatis unde omnis natus error luptatem
-                      accusantium doloremque laudantium totam remriam eaque quae
-                      abillo
-                    </div>
-                    <h5 className="name">
-                      James M. London <em>Lawyer</em>
-                    </h5>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div
-                  className="slide-item element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  <div className="image">
-                    <img src="images/rev3.jpg" alt="image" />
-                  </div>
-                  <div className="desc">
-                    <div className="stars">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                    </div>
-                    <div className="kf-text">
-                      Sed ut perspiciatis unde omnis natus error luptatem
-                      accusantium doloremque laudantium totam remriam eaque quae
-                      abillo
-                    </div>
-                    <h5 className="name">
-                      Olivia D. New York <em>Dentist</em>
-                    </h5>
-                  </div>
-                </div>
-              </SwiperSlide>
+              
             </div>
             <div className="swiper-pagination" />
           </Swiper>
