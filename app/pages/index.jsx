@@ -8,40 +8,34 @@ import MenuItem from "@/src/components/MenuItem";
 
 const featuredDishes = [
   {
-    id: 1,
+    id: 3,
     name: "Eggplant Salad with Peanuts and Egg Crumble",
     price: "$10.50",
     image: "/images/eggplantsalad.jpg", 
     link:"https://order.toasttab.com/online/haoshiguang/item-h10eggplant-salad-with-peanuts-and-egg-crumble_cc017f14-a12d-4430-aeee-0f24354ebe05",
   },
   {
-    id: 2,
+    id: 4,
     name: "Fried Chicken with Bay Leaves",
     price: "$19.50",
     image: "/images/friedchicken.png",
     link:"https://order.toasttab.com/online/haoshiguang/item-h03-fried-chicken-wings-with-bay-leaves_a231083c-3dc0-4087-9ec7-3f9958057a71",
   },
   {
-    id: 3,
+    id: 2,
     name: "Stir Fried Green Beans",
     price: "$21.50",
     image: "/images/greenbeans.jpeg",
     link:"https://order.toasttab.com/online/haoshiguang/item-h02-stir-fried-green-bean-with-pork-and-dried-shrimp_04d2f85b-59de-43f3-8238-2c3e67c6410f",
   },
   {
-    id: 4,
+    id: 1,
     name: "Fried Pork in Scoop",
     price: "$24.00",
     image: "/images/potpork.jpg",
     link:"https://order.toasttab.com/online/haoshiguang/item-h09-30-30min-required-fried-pork-in-scoop-guo-bao-rou_255ce1e6-01f5-4f81-b044-4a965f73ede6",
   },
-  {
-    id: 5,
-    name: "Shredded Tofu Salad",
-    price: "$8.80",
-    image: "/images/shreddedtofusalad.jpg",
-    link:"https://order.toasttab.com/online/haoshiguang/item-a03shredded-tofu-skin-salad_3a38b739-11fb-45e2-86cc-b55fa7284c97",
-  },
+  
 ];
 
 
